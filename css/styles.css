@@ -175,7 +175,7 @@ header {
 /* ============ CATEGORIES ========== */
 
 .categories {
-    background-color: var(--color-bg1);
+    background-color: #636bcc;
     height: 29rem;
 }
 
@@ -207,7 +207,7 @@ header {
     padding: 2rem;
     border-radius: 2rem;
     transition: var(--transition);
-    background-color: var(--color-bg);
+    background-color: var(--color-bg1);
 }
 
 .category:hover {
@@ -243,4 +243,83 @@ header {
 
 .category p {
     font-size: 0.85rem;
+}
+
+
+/* ============ POPULAR COURSES ========== */
+
+.courses {
+    margin-top: 10rem;
+}
+
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.course {
+    background: var(--color-bg1);
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.course:hover {
+    border-color: var(--color-primary);
+    background-color: transparent;
+}
+
+.course-info {
+    padding: 2rem;
+}
+
+.course-info p {
+    font-size: .9rem;
+    margin: 1.2rem 0 2rem;
+}
+
+
+/* ============ FOOTER ========== */
+
+footer {
+    background: var(--color-bg1);
+    padding-top: 5rem;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+}
+
+.footer-container>div h4 {
+    margin-bottom: 1.2rem;
+}
+
+.footer-1 p {
+    margin: 0 0 2rem;
+}
+
+footer ul li {
+    margin-bottom: 0.7rem;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding: 1.2rem 0;
+    margin-top: 4rem;
+    border-top: 1px solid var(--color-bg2);
 }
